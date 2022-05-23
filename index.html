@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Tailwind Css -->
+    <link rel="stylesheet" href="./dist/output.css" />
+    <!-- Icon Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+    <title>Megumin Random Image</title>
+  </head>
+
+  <body style="background-image: url('./assets/image/bg.png')">
+    <!-- Navbar - Start -->
+    <nav class="px-4 lg:px-16 py-4 flex text-red-700">
+      <!-- Tittle Navbar -->
+      <h1 class="text-2xl font-semibold text-red-900">MEGUMIN</h1>
+      <!-- List Navbar -->
+      <ul class="mx-5 lg:mx-10 flex w-2/5 lg:w-44 items-center font-medium">
+        <li class="mr-3">
+          <a
+            class="duration-300 hover:text-red-900 underline underline-offset-4"
+            href="#"
+            >Home</a
+          >
+        </li>
+        <!-- Hidden menu "Cara" when open in desktop -->
+        <li class="mr-3">
+          <a
+            class="duration-300 hover:text-red-900 lg:hidden"
+            href="./dist/how.html"
+            >How</a
+          >
+        </li>
+        <li>
+          <a class="duration-300 hover:text-red-900" href="./dist/about.html"
+            >About</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <!-- Navbar - End -->
+
+    <!-- Main - Start -->
+    <main
+      class="flex flex-col lg:flex-row p-4 lg:pt-6 justify-center lg:justify-around items-center"
+    >
+      <!-- Image Area -->
+      <div
+        class="img-area w-3/4 lg:w-96 overflow-hidden rounded-lg border-4 border-red-900"
+      >
+        <a href="https://i.waifu.pics/932Og1K.jpg" target="_blank">
+          <img src="https://i.waifu.pics/932Og1K.jpg" alt="random waifu" />
+        </a>
+      </div>
+
+      <!-- Additional Area -->
+      <div class="add-area lg:w-1/2 my-4">
+        <!-- Hidden "Cara Menggunakan" when open in smartphone -->
+        <div class="hidden lg:block mb-14 text-red-700">
+          <h1 class="text-4xl font-bold mb-3">HOW TO USE:</h1>
+          <ol class="list-decimal font-semibold">
+            <li>
+              To get a random megumin image, you can press the random button
+            </li>
+            <li>Then system will fetch megumin image url with API</li>
+            <li>
+              Setelah mendapatkan url maka sistem akan mengganti alamat url
+              gambar ke url random gambar yang baru
+            </li>
+            <li>
+              After getting the url, the system will change the image url
+              address to a new random image url
+            </li>
+            <li>
+              Please don't spam random buttons because it can cause errors
+            </li>
+          </ol>
+        </div>
+        <!-- Button for "Acak" -->
+        <button
+          class="px-4 py-3 text-white font-medium bg-red-700 duration-300 hover:bg-red-900 rounded-xl"
+        >
+          <i class="bi bi-shuffle"></i> Random
+        </button>
+        <!-- Button for "Download" -->
+        <a
+          href="https://i.waifu.pics/932Og1K.jpg"
+          target="_blank"
+          class="px-4 py-3 text-white font-medium bg-rose-700 duration-300 hover:bg-rose-900 rounded-xl"
+          ><i class="bi bi-cloud-arrow-down"></i> Download</a
+        >
+      </div>
+    </main>
+    <!-- Main - End -->
+
+    <script src="./dist/script.js"></script>
+  </body>
+</html>
